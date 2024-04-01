@@ -7,6 +7,7 @@ const app = express();
 const PORT = 3000;
 app.set("view engine", "ejs");
 app.use(express.static("images"));
+app.set('views', 'views');
 
 cloudinary.config({
   cloud_name: "dmnlh52x4",
